@@ -8,10 +8,11 @@ A tool for creating editable tooltips.
 1. Add `'django_inline_help'` to `INSTALLED_APPS`
 2. `python manage.py migrate django_inline_help`
 
-### Adding tooltip buttons to template:
+### Adding tooltip buttons to the template:
 
+0. At the top of the template put `{% load django_inline_help %}`
 1. To the list of scripts add `{% init_inline_help %}`
-2. Add new tooltip button via `{% inline_help "Hello world!" %}`
+2. Add tooltip button via `{% inline_help "Hello world!" %}`
 3. Refresh the page
 4. Set tooltip text from the admin site
 5. Refresh the page again

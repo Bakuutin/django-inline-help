@@ -20,7 +20,7 @@ DEFAULT_SETTINGS = {
 }
 
 SETTINGS = deepcopy(DEFAULT_SETTINGS)
-for key, value in getattr(settings, 'INLINE_HELP', {}):
+for key, value in getattr(settings, 'INLINE_HELP', {}).items():
     SETTINGS[key].update(value)
 
 
