@@ -1,0 +1,2 @@
+recursive-include django_inline_help/templates *
+recursive-include django_inline_help/locale *

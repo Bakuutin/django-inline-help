@@ -1,0 +1,11 @@
+{% if tooltip %}
+<button class="btn btn-link django_inline_help"
+        style="padding: 0;"
+        type="button"
+        title="{{ tooltip.header }}"
+        data-content="{{ tooltip.text|linebreaks }}"
+        data-toggle="popover"
+        data-placement="auto {{ tooltip.placement }}">
+        <span class="glyphicon glyphicon-question-sign"></span>
+</button>
+{% endif %}
