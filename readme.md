@@ -4,7 +4,7 @@ A tool for creating editable tooltips.
 
 ### Installation:
 
-0. Install django-inline-help via pip
+0. `pip install git+https://github.com/Bakuutin/django-inline-help@v0.0.1`
 1. Add `'django_inline_help'` to `INSTALLED_APPS`
 2. `python manage.py migrate django_inline_help`
 
